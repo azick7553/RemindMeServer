@@ -14,6 +14,7 @@
         <hibernate.version>5.0.2.Final</hibernate.version>
         <postgresql.version>9.1-901-1.jdbc4</postgresql.version>
         <commons-dbcp2.version>2.1.1</commons-dbcp2.version>
+        <jackson-databind.version>2.9.6</jackson-databind.version>
     </properties>
     <packaging>war</packaging>
 
@@ -35,7 +36,12 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet-api.version}</version>
         </dependency>
-
+        <!-- Jackson converter -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind.version}</version>
+        </dependency>
         <!-- Database -->
         <dependency>
             <groupId>org.springframework.data</groupId>
